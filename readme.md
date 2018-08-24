@@ -81,7 +81,7 @@ Features:
 Configuration
 -------------
 
-All values used by the app are stored in *Config.swift*.
+All values used by the app are stored in *Constants.java*.
 You can change the following values:
 
 - Flickr API Key
@@ -90,9 +90,8 @@ You can change the following values:
 - Number of items per page
 - Number of columns
 
-```swift
+```
 static let APIKey = "1234567890abcdefghijklmnopqrstuvwxyz"
-static let MainColor = UIColor.blackColor()
 static let ItemsPerPage = 20
 ```
 
@@ -103,5 +102,5 @@ To make sure all the images are laid out nicely, I have subclassed `ImageLoader`
 Network requests are made using standard HttpURLConnection.
 
 Image caching. To save network and time, we would like you to implement a
-caching mechanism for the photos displayed in the app. Again, no third-party
-libraries can be used.
+caching mechanism for the photos displayed in the app, and no third-party
+libraries are used.
